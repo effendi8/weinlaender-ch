@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good News Daily</title>
+<meta name="description" content="Good News Daily: six curated, fact-checked items every working morning, published on LinkedIn.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Good News Daily">
+<meta property="og:description" content="Six curated, fact-checked items every working morning, published on LinkedIn.">
+<meta property="og:url" content="https://weinlaender.ch/good-news-daily.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/effendi8/good-news-flash-images/main/static/GND_BANNER.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:'Plus Jakarta Sans';font-weight:400;font-display:swap;src:url('fonts/plus-jakarta-sans-400.woff2') format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-weight:500;font-display:swap;src:url('fonts/plus-jakarta-sans-500.woff2') format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-weight:700;font-display:swap;src:url('fonts/plus-jakarta-sans-700.woff2') format('woff2')}
+:root{--bg:#f5f5f5;--navy:#1d4161;--orange:#ed8731;--yellow:#ffc107;--green:#2e7d32;--line:#e6e6e6;--sans:'Plus Jakarta Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--navy);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5}
+::selection{background:var(--yellow);color:var(--navy)}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+img{display:block;max-width:100%}
+strong{font-weight:700;color:var(--navy)}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+
+header{position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(29,65,97,.1);background:rgba(245,245,245,.95);backdrop-filter:blur(8px)}
+header nav.container{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:1rem 1.5rem}
+header .logo{height:30px;width:auto}
+header ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.5rem 1.25rem;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+header li a{transition:color .2s;white-space:nowrap}
+header li a:hover,header li a.current{color:var(--orange)}
+
+.banner{width:100%;overflow:hidden}
+.banner img{width:100%;height:auto}
+@media (min-width:1023px){.banner{height:calc(1023px * var(--banner-ratio,0.3))}.banner img{width:100%;height:100%;object-fit:cover;object-position:center}}
+.ticker{background:var(--yellow);padding:.5rem 1.5rem;text-align:center;font-size:13px;font-weight:700;font-style:italic}
+
+.intro{padding:5rem 1.5rem;text-align:center}
+.intro .inner{max-width:660px;margin:0 auto}
+.intro .kicker{margin-bottom:1.5rem;font-size:.875rem;font-weight:700;font-style:italic;color:var(--green)}
+.intro p.lede{font-size:1.125rem;line-height:1.65;color:rgba(29,65,97,.85)}
+.actions{margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;height:3rem;padding:0 1.75rem;font-size:.875rem;font-weight:700;white-space:nowrap;transition:background .2s,color .2s}
+.btn svg{width:1rem;height:1rem;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:#2a5578;color:#fff}
+.btn.outline{border:2px solid var(--orange);color:var(--orange)}
+.btn.outline:hover{background:var(--orange);color:#fff}
+
+.block{max-width:730px;margin:0 auto;border-top:1px solid var(--line);padding:4rem 1.5rem}
+.rule{height:5px;width:56px;background:var(--orange);margin-bottom:1.25rem}
+.block h2{font-size:.875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.block .text{margin-top:2.25rem;display:flex;flex-direction:column;gap:1.5rem;font-size:1rem;line-height:1.8;color:rgba(29,65,97,.85)}
+.body-link{border-bottom:3px solid var(--orange);color:var(--navy);transition:border-color .2s}
+.body-link:hover{border-color:var(--navy)}
+.start{background:#fafafa}
+.start .block{text-align:center}
+.start .rule{margin-left:auto;margin-right:auto}
+.start .text{gap:2rem;align-items:center}
+
+footer{background:var(--navy);color:#fff;padding:3rem 1.5rem;text-align:center;font-size:.875rem}
+footer .inner{max-width:80rem;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+footer .site{font-weight:700;letter-spacing:.08em}
+footer ul{list-style:none;display:flex;gap:1.5rem}
+footer a{transition:color .2s}
+footer a:hover{color:var(--yellow)}
+
+@media (min-width:768px){
+  header nav.container{padding:1rem 3rem}
+  header ul{gap:.5rem 2rem}
+  .intro{padding:7rem 1.5rem}
+  .intro p.lede{font-size:1.25rem}
+  .actions{flex-direction:row}
+  .block{padding:5rem 1.5rem}
+  .block .text{font-size:1.125rem}
+  footer .inner{flex-direction:row;justify-content:space-between}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="container" aria-label="Main">
+    <a href="good-news-daily.html" aria-label="Good News Daily home"><img class="logo" src="https://raw.githubusercontent.com/effendi8/good-news-flash-images/main/static/GND_LOGO.png" alt="Good News Daily"></a>
+    <ul>
+      <li><a class="current" href="good-news-daily.html" aria-current="page">Good News Daily</a></li>
+      <li><a href="#how-it-is-made">How it is made</a></li>
+      <li><a href="mailto:kontakt@weinlaender.ch">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section>
+  <div class="banner"><img src="https://raw.githubusercontent.com/effendi8/good-news-flash-images/main/static/GND_BANNER.png" alt="Good News Daily. Inspiring Your Success, Every Day." onload="this.parentNode.style.setProperty('--banner-ratio',this.naturalHeight/this.naturalWidth)"></div>
+  <div class="ticker">Verified sources · published daily</div>
+</section>
+
+<section class="intro">
+  <div class="inner">
+    <p class="kicker">curated and fact-checked, every day</p>
+    <p class="lede">Six items every working morning, published on LinkedIn. Three headlines with the opportunity inside them. Two or three developments in science, climate, technology or culture. Ninety seconds.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://www.linkedin.com/company/109379035/" target="_blank" rel="noopener noreferrer">Read today's briefing <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="btn outline" href="#how-it-is-made">How it is made</a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="rule"></div>
+  <h2>Why this exists</h2>
+  <div class="text">
+    <p>Progress is continuous. It arrives in small increments, in places that rarely lead the bulletin. A trial reads out. A grid holds power it could not hold last year. A factory runs on something cleaner than it ran on before. These things are real, they compound, and most of them go unreported.</p>
+    <p>Good News Daily is a daily record of them.</p>
+    <p>Hard news appears here too, and gets covered straight. The question asked of it is where it opens something, and for whom.</p>
+  </div>
+</section>
+
+<section class="block" id="how-it-is-made">
+  <div class="rule"></div>
+  <h2>How it is made</h2>
+  <div class="text">
+    <p><strong>Sources.</strong> Headlines come from established wire services and papers of record. Reuters, AP, the Financial Times, the BBC, the Wall Street Journal. Where a claim originates with a company, it says so.</p>
+    <p><strong>Structure.</strong> Six items, never more. Three headlines with a short opportunity line each. Two or three positive developments, at least one on climate or technology. Every item links to its source, on the keyword.</p>
+    <p><strong>Cadence.</strong> Working mornings, Europe/Zurich. The first working day of the week opens with a short quote. The last one closes with one.</p>
+    <p><strong>What it never carries.</strong> No affiliate links. No sponsored placements. No paid inclusions. Nothing here earns a commission, now or later.</p>
+    <p><strong>Contact.</strong> <a class="body-link" href="mailto:kontakt@weinlaender.ch">kontakt@weinlaender.ch</a></p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="rule"></div>
+  <h2>Who writes it</h2>
+  <div class="text">
+    <p>Stefan Weinlaender.</p>
+    <p>I read widely, I believe progress is continuous and under-reported, and I wanted a version of the morning news that showed it. So I started writing one.</p>
+  </div>
+</section>
+
+<section class="start">
+  <div class="block">
+    <div class="rule"></div>
+    <h2>Start tomorrow morning</h2>
+    <div class="text">
+      <p>Good News Daily publishes on LinkedIn. Follow the Page and it arrives in your feed on working mornings.</p>
+      <a class="btn primary" href="https://www.linkedin.com/company/109379035/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        Follow on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="inner">
+    <p class="site"><a href="good-news-daily.html">Good News Daily</a></p>
+    <ul>
+      <li><a href="gnd/legal-notice.html">Legal Notice</a></li>
+      <li><a href="gnd/privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

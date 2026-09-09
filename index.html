@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefan Weinlaender | Supply Chain and Procurement Executive</title>
+<meta name="description" content="Stefan Weinlaender, CPO and VP Supply Chain. Senior executive specializing in AI-enabled procurement, energy, cleantech, and industrial tech across the DACH region and globally.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stefan Weinlaender | Supply Chain and Procurement Executive">
+<meta property="og:description" content="Senior executive specializing in AI-enabled procurement, energy, cleantech, and industrial tech across the DACH region and globally.">
+<meta property="og:url" content="https://weinlaender.ch/">
+<meta property="og:image" content="https://weinlaender.ch/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/playfair-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plus-jakarta-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Plus Jakarta Sans';font-weight:400;font-display:swap;src:url('fonts/plus-jakarta-sans-400.woff2') format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-weight:500;font-display:swap;src:url('fonts/plus-jakarta-sans-500.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-weight:400;font-display:swap;src:url('fonts/playfair-display-400.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-weight:500;font-display:swap;src:url('fonts/playfair-display-500.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/playfair-display-italic-400.woff2') format('woff2')}
+
+:root{
+  --bg:#f9f9f8;--fg:#1a1c1e;--border:#e2e2df;--muted:#ecece9;--muted-fg:#6b7075;
+  --primary:#1a1c1e;--primary-fg:#f9f9f8;--secondary:#ecece9;
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;--serif:'Playfair Display',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5}
+::selection{background:var(--primary);color:var(--primary-fg)}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400}
+ul{list-style:none}
+img{display:block;max-width:100%}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+.eyebrow{font-size:.875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-fg)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;height:2.75rem;padding:0 2rem;font-size:.875rem;font-weight:500;border:1px solid var(--primary);transition:background .2s,color .2s}
+.btn svg{width:1rem;height:1rem}
+.icon{width:1.25rem;height:1.25rem;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1.5rem;mix-blend-mode:difference;color:#fff}
+nav .brand{font-size:.875rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+nav ul{display:flex;align-items:center;gap:2rem}
+nav li a{font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase;transition:opacity .2s}
+nav li a:hover{opacity:.7}
+
+.hero{position:relative;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:1.5rem;overflow:hidden}
+.hero .texture{position:absolute;inset:0;opacity:.15;pointer-events:none}
+.hero .texture img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
+.hero .grid{position:relative;z-index:10;width:100%;max-width:80rem;display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;margin-top:4rem}
+.hero .copy{order:2;display:flex;flex-direction:column;gap:2rem}
+.hero h1{font-size:clamp(3rem,8vw,6rem);font-weight:500;line-height:1.05;letter-spacing:-.02em;margin-top:1rem}
+.hero .lede{font-size:1.125rem;color:var(--muted-fg);max-width:28rem;line-height:1.65}
+.hero .btn{background:var(--primary);color:var(--primary-fg)}
+.hero .btn:hover{background:#2e3134}
+.hero .portrait-wrap{order:1;display:flex;justify-content:center}
+.portrait{position:relative;width:100%;max-width:400px;aspect-ratio:4/5;background:var(--muted);overflow:hidden}
+.portrait::after{content:"";position:absolute;inset:0;background:rgba(26,28,30,.05);mix-blend-mode:multiply;transition:opacity .5s}
+.portrait:hover::after{opacity:0}
+.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .7s}
+.portrait:hover img{filter:grayscale(0)}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:var(--muted-fg);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.scroll-cue svg{width:1rem;height:1rem;animation:bounce 1s infinite}
+@keyframes bounce{0%,100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)}}
+
+.about{padding:6rem 0;background:var(--primary);color:var(--primary-fg)}
+.about .grid{display:grid;grid-template-columns:1fr;gap:4rem}
+.about h2{font-size:clamp(1.875rem,4vw,3rem);line-height:1.2}
+.about .text{display:flex;flex-direction:column;gap:2rem}
+.about .lede{font-size:1.125rem;line-height:1.65;color:rgba(249,249,248,.8)}
+.about .facts{display:grid;grid-template-columns:1fr 1fr;gap:2rem 1rem;padding-top:2rem;border-top:1px solid rgba(249,249,248,.2)}
+.about .facts h3{font-size:1.25rem;margin-bottom:.5rem}
+.about .facts li{font-size:.875rem;color:rgba(249,249,248,.7);line-height:1.6}
+
+.experience{padding:6rem 0}
+.experience header{margin-bottom:4rem}
+.experience header h2{font-size:clamp(2.25rem,4vw,3rem);margin-top:1rem}
+.role{border-top:1px solid var(--border);padding:3rem 0;display:grid;grid-template-columns:1fr;gap:2rem;transition:background .2s}
+.role:last-child{border-bottom:1px solid var(--border)}
+.role:hover{background:rgba(236,236,233,.5)}
+.role h3{font-size:1.5rem}
+.role .title{color:var(--muted-fg);margin-top:.25rem}
+.role p.desc{font-size:1.125rem;line-height:1.65;max-width:42rem}
+
+.thesis{position:relative;padding:6rem 0;background:var(--secondary);overflow:hidden}
+.thesis .glow{position:absolute;top:-8rem;right:-8rem;width:24rem;height:24rem;background:var(--primary);opacity:.05;filter:blur(64px);border-radius:50%;pointer-events:none}
+.thesis .container{position:relative;z-index:10;display:flex;flex-direction:column;gap:5rem}
+.thesis .head{display:grid;grid-template-columns:1fr;gap:3rem;align-items:end}
+.thesis .head h2{font-size:clamp(1.875rem,4vw,3rem);line-height:1.2;margin-top:1rem}
+.thesis .head p.intro{font-size:1.125rem;line-height:1.65;color:var(--muted-fg)}
+.callout{border-left:2px solid var(--primary);padding:1rem 0 1rem 2rem}
+.callout p{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3vw,1.875rem);line-height:1.35;max-width:56rem}
+.cells{display:grid;grid-template-columns:1fr;border:1px solid var(--border)}
+.cells>div{padding:2rem;display:flex;flex-direction:column;gap:1rem}
+.cells>div+div{border-top:1px solid var(--border)}
+.cells .label{font-size:.875rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted-fg)}
+.cells p.body{line-height:1.65}
+.cells strong{font-weight:500}
+.stats{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);border-top:0}
+.stats>div{padding:2rem;display:flex;flex-direction:column;gap:.5rem}
+.stats>div:nth-child(odd){border-right:1px solid var(--border)}
+.stats>div:nth-child(n+3){border-top:1px solid var(--border)}
+.stats .value{font-family:var(--serif);font-size:2.25rem;line-height:1.1}
+.stats .label{font-size:.875rem;color:var(--muted-fg)}
+
+footer{padding:6rem 1.5rem;background:var(--primary);color:var(--primary-fg);text-align:center}
+footer .cta{max-width:48rem;margin:0 auto;display:flex;flex-direction:column;gap:2rem}
+footer h2{font-size:clamp(2.25rem,6vw,3.75rem);line-height:1.15}
+footer .cta p{font-size:1.25rem;color:rgba(249,249,248,.7)}
+footer .actions{padding-top:2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+footer .btn{width:100%;justify-content:center;border-color:var(--primary-fg);color:var(--primary-fg)}
+footer .btn:hover{background:var(--primary-fg);color:var(--primary)}
+footer .btn.ghost{border-color:transparent}
+footer .btn.ghost:hover{background:rgba(249,249,248,.1);color:var(--primary-fg)}
+footer .email{font-size:.9375rem;color:rgba(249,249,248,.7);letter-spacing:.02em}
+footer .email:hover{color:var(--primary-fg);text-decoration:underline}
+footer .legal{margin-top:8rem;padding-top:2rem;border-top:1px solid rgba(249,249,248,.1);display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:1rem;font-size:.75rem;color:rgba(249,249,248,.4);max-width:80rem;margin-left:auto;margin-right:auto}
+footer .legal ul{display:flex;justify-content:center;gap:.5rem;flex-shrink:0}
+footer .legal li,footer .legal p{white-space:nowrap}
+footer .legal a:hover{color:var(--primary-fg)}
+
+@media (min-width:768px){
+  .container{padding:0 3rem}
+  nav{padding:1.5rem 3rem}
+  .hero{padding:3rem}
+  .hero .grid{grid-template-columns:1fr 1fr;gap:6rem;margin-top:0}
+  .hero .copy{order:1}
+  .hero .portrait-wrap{order:2;justify-content:flex-end}
+  .hero .lede{font-size:1.25rem}
+  .about,.experience,.thesis,footer{padding-top:8rem;padding-bottom:8rem}
+  .about .grid{grid-template-columns:1fr 1fr;gap:6rem}
+  .about .lede{font-size:1.25rem}
+  .experience header{margin-bottom:6rem}
+  .role{grid-template-columns:1fr 2fr;padding:4rem 0}
+  .thesis .head{grid-template-columns:1fr 1fr}
+  .cells{grid-template-columns:repeat(3,1fr)}
+  .cells>div+div{border-top:0;border-left:1px solid var(--border)}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .stats>div{border-right:1px solid var(--border)}
+  .stats>div:last-child{border-right:0}
+  .stats>div:nth-child(n+3){border-top:0}
+  footer .actions{flex-direction:row}
+  footer .btn{width:auto}
+  footer .legal{flex-direction:row}
+}
+@media (min-width:768px) and (max-width:1023px){footer .legal{flex-wrap:wrap;justify-content:center;gap:1rem 2rem}}
+@media (max-width:480px){nav ul{gap:1.25rem}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <a class="brand" href="#top">Stefan Weinlaender</a>
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="mailto:kontakt@weinlaender.ch">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="texture"><img src="assets/hero_texture.jpg" alt=""></div>
+  <div class="grid">
+    <div class="copy">
+      <div>
+        <p class="eyebrow">CPO &amp; VP Supply Chain</p>
+        <h1>Scales.<br>Consolidates.<br>Optimizes.</h1>
+      </div>
+      <p class="lede">Senior executive specializing in AI-enabled procurement, energy, cleantech, and industrial tech across the DACH region and globally.</p>
+      <div>
+        <a class="btn" href="https://www.linkedin.com/in/stefanweinlaender/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn
+          <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait"><img src="assets/stefan_headshot.jpg" alt="Stefan Weinlaender"></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><svg class="icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+</section>
+
+<section class="about" id="about">
+  <div class="container grid">
+    <div><h2>Engineering precision.<br>Executive gravitas.</h2></div>
+    <div class="text">
+      <p class="lede">Supply chains are no longer just operational necessities. They are strategic differentiators. From scaling frontier tech startups to world-scale operations, to leading procurement transformations in legacy industrial groups.</p>
+      <div class="facts">
+        <div><h3>Domains</h3><ul><li>Cleantech &amp; Energy</li><li>Industrial Tech</li><li>Infrastructure</li></ul></div>
+        <div><h3>Focus</h3><ul><li>AI-Enabled Procurement</li><li>Supply Chain Scaling</li><li>Global Consolidation</li></ul></div>
+        <div><h3>Region</h3><ul><li>DACH-based</li><li>Zurich, Switzerland</li><li>Global Mandates</li></ul></div>
+        <div><h3>Education</h3><ul><li>Executive MBA</li><li>University of St.Gallen (HSG)</li><li style="padding-top:.25rem">Board Readiness Diploma</li><li>IMD (expected 2027)</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience">
+  <div class="container">
+    <header>
+      <p class="eyebrow">Select Experience</p>
+      <h2>A track record of transformation.</h2>
+    </header>
+    <div>
+      <article class="role">
+        <div><h3>Climeworks</h3><p class="title">Vice President Supply Chain Management</p></div>
+        <p class="desc">Pioneering direct air carbon capture (DAC) company scaling to megaton CO₂ removal. Instrumental in building the supply chain from early startup phase to world-scale operational deployment.</p>
+      </article>
+      <article class="role">
+        <div><h3>Implenia</h3><p class="title">Chief Procurement Officer (CPO)</p></div>
+        <p class="desc">Led procurement transformation at Switzerland's leading construction and infrastructure services group, driving consolidation, strategic sourcing, and substantial efficiency gains.</p>
+      </article>
+      <article class="role">
+        <div><h3>Kennametal</h3><p class="title">Director Sourcing EMEA</p></div>
+        <p class="desc">Managed strategic sourcing for EMEA at a global leader in industrial cutting tools and tooling solutions, optimizing cross-border supply networks.</p>
+      </article>
+      <article class="role">
+        <div><h3>Siemens</h3><p class="title">25 Years · Various Leadership Roles</p></div>
+        <p class="desc">A quarter-century at one of the world's most complex industrial enterprises. Built deep expertise across procurement, supply chain, and operations in a global, multi-division environment: the foundation for everything that followed.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="thesis">
+  <div class="glow"></div>
+  <div class="container">
+    <div class="head">
+      <div>
+        <p class="eyebrow">CAS in AI Management · CAS Thesis · 2026</p>
+        <h2>Reshoring BPO: Replacing Business Process Outsourcing with Generative AI</h2>
+      </div>
+      <p class="intro">Three decades of offshoring administrative processes assumed that cheap labor arbitrage was permanent. It wasn't. Agentic AI has changed the equation, and the research proves it.</p>
+    </div>
+    <div class="callout">
+      <p>"Hidden coordination costs, language barriers, and internal workarounds regularly cause fully loaded BPO costs to exceed stated rates by 20 to 30%."</p>
+    </div>
+    <div class="cells">
+      <div><p class="label">The Research</p><p class="body">Five expert interviews across three industrial archetypes (Greenfield/Scaling, Mature/Complex, and Midsize-Enterprise) to identify a universally applicable automation target in industrial supply chain operations.</p></div>
+      <div><p class="label">The Golden Overlap</p><p class="body">One process was named by all five companies as a primary pain point: <strong>Order Confirmation Management</strong>. The only workflow with unanimous confirmation across every archetype, and the ideal beachhead for agentic AI deployment.</p></div>
+      <div><p class="label">The Solution</p><p class="body">An agentic AI system built on a Perceive-Reason-Act architecture, hosted on Microsoft Azure, delivered as a SaaS product. It eliminates the offshore middleman and returns control, speed, and data integrity to your own operations.</p></div>
+    </div>
+    <div class="stats">
+      <div><p class="value">5</p><p class="label">Companies studied across 3 industrial archetypes</p></div>
+      <div><p class="value">20 to 30%</p><p class="label">Hidden cost overrun in typical fully-loaded BPO contracts</p></div>
+      <div><p class="value">Hours to Minutes</p><p class="label">Order confirmation cycle time with agentic AI</p></div>
+      <div><p class="value">USD 0.25</p><p class="label">Per order confirmation. SaaS pricing, no offshore overhead</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="cta">
+    <h2>Let's build something extraordinary.</h2>
+    <p>Open for board mandates, advisory roles, and strategic dialogue.</p>
+    <div class="actions">
+      <a class="btn" href="https://www.linkedin.com/in/stefanweinlaender/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        Connect on LinkedIn
+      </a>
+      <a class="btn ghost" href="mailto:kontakt@weinlaender.ch">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Reach Out
+      </a>
+    </div>
+    <a class="email" href="mailto:kontakt@weinlaender.ch">kontakt@weinlaender.ch</a>
+  </div>
+  <div class="legal">
+    <p>© 2026 Stefan Weinlaender. All rights reserved.</p>
+    <ul>
+      <li><a href="https://weinlaender.ch">weinlaender.ch</a></li>
+      <li aria-hidden="true">·</li>
+      <li><a href="legal-notice.html">Legal Notice</a></li>
+      <li aria-hidden="true">·</li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+    <p>Based in Küsnacht, Zurich, Switzerland</p>
+  </div>
+</footer>
+
+</body>
+</html>
